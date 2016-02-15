@@ -1,0 +1,33 @@
+{
+    "paths": {
+        "base": "./src/",
+        "js": "./src/js/",
+        "vendorjs": "./src/js/vendor/",
+        "ts": "./src/js/ts/",
+        "jade": "./src/jade/",
+        "jdinc": "./src/jade/inc/",
+        "sass": "./src/css/sass/",
+        "css": "./src/css/"
+    },
+    "files": {
+        "html":"./src/*.html",
+        "js": "./src/js/*.js",
+        "vendorjs": "./src/js/vendor/*.js",
+        "ts": "./src/js/ts/*.ts",
+        "tsMain" : "./src/js/ts/app.ts",
+        "tsOut" : "app.js",    
+        "jade": "./src/jade/*.jade",
+        "jdinc": "./src/jade/inc/",
+        "sass": "./src/css/sass/*.*",
+        "css": "./src/css/*.css",
+        "assets": "./src/assets/**/*"
+    },
+    "dist":{
+        "base":"./dist/",
+        "css":"./dist/css/",
+        "js":"./dist/js/",
+        "assets":"./dist/assets/",
+        "html":"./dist/"
+    }
+    
+}
