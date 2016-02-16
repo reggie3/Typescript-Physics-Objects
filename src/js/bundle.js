@@ -44,21 +44,17 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var greeter = __webpack_require__(1);
-	var $ = __webpack_require__(2);
-	$(function () {
-	    $(document.body).html(greeter("Reggie 3"));
-	});
+	module.exports = __webpack_require__(1);
 
 
 /***/ },
 /* 1 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	function greet(name) {
-	    return 'Hello ' + name;
-	}
-	module.exports = greet;
+	var $ = __webpack_require__(2);
+	$(function () {
+	    //$(document.body).html(greeter("Reggie 3"));
+	});
 
 
 /***/ },
