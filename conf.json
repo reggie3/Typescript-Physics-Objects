@@ -7,7 +7,8 @@
         "jade": "./src/jade/",
         "jdinc": "./src/jade/inc/",
         "sass": "./src/css/sass/",
-        "css": "./src/css/"
+        "css": "./src/css/",
+        "tsdefs": "./src/js/ts/defs/"
     },
     "files": {
         "html":"./src/*.html",
@@ -20,7 +21,8 @@
         "jdinc": "./src/jade/inc/",
         "sass": "./src/css/sass/*.*",
         "css": "./src/css/*.css",
-        "assets": "./src/assets/**/*"
+        "assets": "./src/assets/**/*",
+        "typings": "./typings/**/*.d.ts"
     },
     "dist":{
         "base":"./dist/",

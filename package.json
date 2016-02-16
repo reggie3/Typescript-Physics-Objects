@@ -6,7 +6,10 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "bootstrap-webpack": "0.0.5",
-    "jquery": "^2.2.0"
+    "cannon": "^0.6.2",
+    "jquery": "^2.2.0",
+    "three": "^0.74.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",

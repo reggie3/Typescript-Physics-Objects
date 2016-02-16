@@ -27,6 +27,15 @@ gulp.task('dist', function(){
     gulp.src(conf.files.css).pipe(gulp.dest(conf.dist.css));
 });
 
+/*************************************
+ * copy the ts def files that are in the typings to the ts source folder so that
+ * we can use them during production 
+ */
+gulp.task('tsdef', function(){
+    gulp.src(conf.files.typings).pipe(print()).pipe(gulp.dest(conf.paths.tsdefs));
+});
+
+
 /**********************************
  * run Webpack task defined in webpack.config.js
  *  it compiles the typescript and builds souremaps
@@ -60,6 +69,7 @@ gulp.task('watch', function(){
     gulp.watch([conf.files.ts], ['wp']);
     gulp.watch([conf.files.jade], ['jade']);
     gulp.watch([conf.files.sass], ['sass']);
+    gulp.watch([conf.files.typings], ['tsdef']);
 });
 
 /*************************************************
